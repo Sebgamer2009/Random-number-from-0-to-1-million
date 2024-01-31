@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator, From 0 to 1 million!</title>
+    <script>
+        function generateRandomNumber() {
+            var randomNumber = Math.floor(Math.random() * 1000000);
+            document.getElementById("randomNumber").innerHTML = randomNumber;
+        }
+    </script>
+</head>
+<body onload="generateRandomNumber()">
+    <h1>Random Number Generator, from 0 to 1 million!</h1>
+    <p>Random Number: <span id="randomNumber"></span></p>
+    <button onclick="generateRandomNumber()">Generate</button>
+</body>
+</html>
